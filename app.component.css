@@ -1,0 +1,31 @@
+header img {
+    height: 80px;
+    margin-left: 40px;
+    
+}
+header {
+    background-color: rgba(185, 235, 232, 0.879);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 rgb(43, 113, 143);
+    background-size: auto;
+}
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 10px;
+}
+
+header li a {
+    color: rgb(46, 5, 24);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+<div class="insert">
+
+<div class="">
+    <h3> Add Pizza </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label>Pizza Name</label>
+            <input type="text" class ="form-control" id = "pname"
+                [(ngModel)] = "pizza.pizzaName" name = "pname">
+        </div>
+    
+        <div class="form-group">
+            <label>Pizza Amount</label>
+            <input type="text" class ="form-control" id = "pamount"
+                [(ngModel)] = "pizza.pizzaAmount" name = "pamount">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Insert</button>
+    
+    </form>
+    </div> 
+</div>

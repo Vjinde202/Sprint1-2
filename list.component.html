@@ -1,0 +1,26 @@
+<div class="insert">
+
+<h2> List of  Pizzas</h2>
+<table class="table table-started">
+    <thead>
+        <tr>
+            <th>Pizza Id</th>
+            <th>Pizza Name</th>
+            <th>Pizza Amount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let pizza of pizzas">
+            <td> {{pizza.id}}</td>
+            <td>{{pizza.pizzaName}}</td>
+            <td>{{pizza.pizzaAmount | currency : 'INR'}}</td>
+            <td>
+                <button (click)="updatePizza(pizza.id)" class="btn btn-info">Update</button>
+                <button (click)="deletePizza(pizza.id)" class="btn btn-danger" style="margin-left:10px">Delete</button>
+                <button (click)="pizzaDetails(pizza.id)" class="btn btn-info" style="margin-left:10px">View</button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
